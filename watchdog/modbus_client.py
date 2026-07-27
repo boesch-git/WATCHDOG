@@ -3,6 +3,7 @@
 import inspect
 
 from pymodbus.client import ModbusSerialClient
+
 from watchdog.config import MODBUS_CONFIG
 from watchdog.register_map import REGISTER_MAP
 
