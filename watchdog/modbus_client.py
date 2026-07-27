@@ -1,6 +1,6 @@
 # watchdog/modbus_client.py
 
-imnport inspect
+import inspect
 
 from pymodbus.client import ModbusSerialClient
 from watchdog.config import MODBUS_CONFIG
