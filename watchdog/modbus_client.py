@@ -1,5 +1,7 @@
 # watchdog/modbus_client.py
 
+imnport inspect
+
 from pymodbus.client import ModbusSerialClient
 from watchdog.config import MODBUS_CONFIG
 from watchdog.register_map import REGISTER_MAP
@@ -24,6 +26,68 @@ class WatchdogModbusClient:
     def close(self):
         self.client.close()
 
+    def _read_holding_registers(self, address, count):
+        parameters = inspect.signature(
+            self.client.read_holding_registers
+        ).parameters
+
+        if "slave" in parameters:
+            return self.client.read_holding_registers(
+                address=address,
+                count=count,
+                slave=self.slave_id,
+            )
+
+        if "unit" in parameters:
+            return self.client.read_holding_registers(
+                address=address,
+                count=count,
+                unit=self.slave_id,
+            )
+
+        if "device_id" in parameters:
+            return self.client.read_holding_registers(
+                address=address,
+                count=count,
+                device_id=self.slave_id,
+            )
+
+        return self.client.read_holding_registers(
+            address,
+            count,
+        )
+
+    def _read_input_registers(self, address, count):
+        parameters = inspect.signature(
+            self.client.read_input_registers
+        ).parameters
+
+        if "slave" in parameters:
+            return self.client.read_input_registers(
+                address=address,
+                count=count,
+                slave=self.slave_id,
+            )
+
+        if "unit" in parameters:
+            return self.client.read_input_registers(
+                address=address,
+                count=count,
+                unit=self.slave_id,
+            )
+
+        if "device_id" in parameters:
+            return self.client.read_input_registers(
+                address=address,
+                count=count,
+                device_id=self.slave_id,
+            )
+
+        return self.client.read_input_registers(
+            address,
+            count,
+        )
+    
     def read_register(self, name, definition):
         register_type = definition["type"]
         address = definition["address"]
@@ -31,17 +95,9 @@ class WatchdogModbusClient:
         scale = definition["scale"]
 
         if register_type == "holding":
-            response = self.client.read_holding_registers(
-                address=address,
-                count=count,
-                slave=self.slave_id,
-            )
+            response = self._read_holding_registers(address, count)
         elif register_type == "input":
-            response = self.client.read_input_registers(
-                address=address,
-                count=count,
-                slave=self.slave_id,
-            )
+            response = self._read_input_registers(address, count)
         else:
             raise ValueError(f"Unbekannter Registertyp: {register_type}")
 
