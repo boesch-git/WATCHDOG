@@ -216,3 +216,479 @@
 2026-07-27 16:09:14,205 | INFO | Modbus RTU Verbindung wird aufgebaut.
 2026-07-27 16:09:14,205 | ERROR | [Errno 2] could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'
 2026-07-27 16:09:14,205 | ERROR | Verbindung zum Modbus-Gerät fehlgeschlagen.
+2026-07-27 16:19:29,430 | INFO | Watchdog wird gestartet.
+2026-07-27 16:19:29,430 | INFO | Modbus RTU Verbindung wird aufgebaut.
+2026-07-27 16:19:29,431 | INFO | Modbus-Verbindung erfolgreich hergestellt.
+2026-07-27 16:19:29,431 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:19:34,432 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:19:39,433 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:19:44,433 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:19:49,434 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:19:54,435 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:19:59,436 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:20:04,437 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:20:09,438 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:20:14,438 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:20:19,439 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:20:24,440 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:20:29,441 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:20:34,441 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:20:39,442 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:20:44,443 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:20:49,444 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:20:54,445 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:20:59,446 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:21:04,446 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:21:09,447 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:21:14,448 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:21:19,449 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:21:24,450 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:21:29,451 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:21:34,451 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:21:39,452 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:21:44,453 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:21:49,454 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:21:54,455 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:21:59,455 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:22:04,456 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:22:09,457 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:22:14,457 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:22:19,458 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:22:24,459 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:22:29,460 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:22:34,461 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:22:39,462 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:22:44,463 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:22:49,463 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:22:54,464 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:22:59,465 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:23:04,466 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:23:09,467 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:23:14,468 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:23:19,468 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:23:24,469 | ERROR | Fehler beim Auslesen: ModbusClientMixin.read_holding_registers() got an unexpected keyword argument 'slave'
+2026-07-27 16:23:26,184 | INFO | Watchdog wurde durch Benutzer beendet.
+2026-07-27 16:23:26,186 | INFO | Modbus-Verbindung geschlossen.
+2026-07-27 16:43:38,052 | INFO | Watchdog wird gestartet.
+2026-07-27 16:43:38,052 | INFO | Modbus RTU Verbindung wird aufgebaut.
+2026-07-27 16:43:38,054 | INFO | Modbus-Verbindung erfolgreich hergestellt.
+2026-07-27 16:43:38,198 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:43:38,207 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:43:38,207 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:43:43,349 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:43:43,349 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:43:43,349 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:43:48,500 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:43:48,500 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:43:48,501 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:43:53,647 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:43:53,648 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:43:53,682 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:43:58,833 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:43:58,833 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:43:58,868 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:44:04,015 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:44:04,015 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:44:04,015 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:44:09,166 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:44:09,166 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:44:09,166 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:44:14,300 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:44:14,300 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:44:14,300 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:44:19,447 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:44:19,447 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:44:19,447 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:44:24,585 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:44:24,585 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:44:24,620 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:44:29,766 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:44:29,767 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:44:29,802 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:44:34,948 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:44:34,970 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:44:34,970 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:44:40,113 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:44:40,113 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:44:40,148 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:44:45,281 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:44:45,282 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:44:45,291 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:44:50,428 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:44:50,429 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:44:50,463 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:44:55,614 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:44:55,615 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:44:55,649 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:45:00,795 | INFO | Rücklauftemperatur: 3.4000000000000004 °C raw=34
+2026-07-27 16:45:00,796 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:45:00,830 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:45:05,977 | INFO | Rücklauftemperatur: 3.4000000000000004 °C raw=34
+2026-07-27 16:45:05,977 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:45:05,977 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:45:11,111 | INFO | Rücklauftemperatur: 3.4000000000000004 °C raw=34
+2026-07-27 16:45:11,111 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:45:11,111 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:45:16,263 | INFO | Rücklauftemperatur: 3.4000000000000004 °C raw=34
+2026-07-27 16:45:16,263 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:45:16,273 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:45:21,414 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:45:21,414 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:45:21,449 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:45:26,595 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:45:26,596 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:45:26,631 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:45:31,776 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:45:31,777 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:45:31,811 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:45:36,958 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:45:36,959 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:45:36,994 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:45:42,141 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:45:42,141 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:45:42,176 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:45:47,323 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:45:47,324 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:45:47,333 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:45:52,475 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:45:52,476 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:45:52,510 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:45:57,657 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:45:57,658 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:45:57,692 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:46:02,838 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:46:02,839 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:46:02,873 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:46:08,020 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:46:08,020 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:46:08,055 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:46:13,202 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:46:13,202 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:46:13,237 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:46:18,371 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:46:18,372 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:46:18,381 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:46:23,519 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:46:23,519 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:46:23,554 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:46:28,701 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:46:28,701 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:46:28,711 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:46:33,852 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:46:33,853 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:46:33,888 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:46:39,037 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:46:39,038 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:46:39,047 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:46:44,185 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:46:44,186 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:46:44,220 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:46:49,368 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:46:49,368 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:46:49,377 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:46:54,519 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:46:54,520 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:46:54,555 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:46:59,699 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:46:59,700 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:46:59,734 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:47:04,883 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:47:04,885 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:47:04,886 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:47:10,032 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:47:10,033 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:47:10,034 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:47:15,166 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:47:15,166 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:47:15,166 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:47:20,301 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:47:20,302 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:47:20,302 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:47:25,437 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:47:25,438 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:47:25,438 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:47:30,586 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:47:30,587 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:47:30,587 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:47:35,721 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:47:35,721 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:47:35,722 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:47:40,873 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:47:40,873 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:47:40,873 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:47:46,006 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:47:46,007 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:47:46,007 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:47:51,158 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:47:51,159 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:47:51,159 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:47:56,306 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:47:56,306 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:47:56,306 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:48:01,459 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:48:01,459 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:48:01,459 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:48:06,607 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:48:06,607 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:48:06,607 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:48:11,741 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:48:11,742 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:48:11,742 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:48:16,893 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:48:16,894 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:48:16,894 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:48:22,027 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:48:22,027 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:48:22,027 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:48:27,178 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:48:27,179 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:48:27,179 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:48:32,327 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:48:32,327 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:48:32,327 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:48:37,475 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:48:37,476 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:48:37,476 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:48:42,609 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:48:42,610 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:48:42,610 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:48:47,744 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:48:47,744 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:48:47,744 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:48:52,883 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:48:52,883 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:48:52,883 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:48:58,030 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:48:58,030 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:48:58,031 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:49:03,163 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:49:03,164 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:49:03,164 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:49:08,302 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:49:08,302 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:49:08,302 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:49:13,432 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:49:13,432 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:49:13,433 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:49:18,570 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:49:18,571 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:49:18,571 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:49:23,718 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:49:23,719 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:49:23,719 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:49:28,853 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:49:28,853 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:49:28,853 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:49:34,005 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:49:34,006 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:49:34,006 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:49:39,152 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:49:39,152 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:49:39,153 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:49:44,287 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:49:44,287 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:49:44,287 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:49:49,421 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:49:49,422 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:49:49,422 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:49:54,556 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:49:54,556 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:49:54,557 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:49:59,690 | INFO | Rücklauftemperatur: 3.4000000000000004 °C raw=34
+2026-07-27 16:49:59,690 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:49:59,690 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:50:04,828 | INFO | Rücklauftemperatur: 3.4000000000000004 °C raw=34
+2026-07-27 16:50:04,829 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:50:04,829 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:50:09,976 | INFO | Rücklauftemperatur: 3.4000000000000004 °C raw=34
+2026-07-27 16:50:09,976 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:50:09,976 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:50:15,127 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:50:15,127 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:50:15,127 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:50:20,260 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:50:20,260 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:50:20,260 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:50:25,394 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:50:25,395 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:50:25,395 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:50:30,529 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:50:30,529 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:50:30,529 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:50:35,667 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:50:35,668 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:50:35,668 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:50:40,814 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:50:40,814 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:50:40,815 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:50:45,968 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:50:45,968 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:50:45,969 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:50:51,117 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:50:51,117 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:50:51,117 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:50:56,250 | INFO | Rücklauftemperatur: 3.3000000000000003 °C raw=33
+2026-07-27 16:50:56,251 | INFO | Außentemperatur: 3.0 °C raw=30
+2026-07-27 16:50:56,252 | INFO | Verdichterdrehzahl: 82 rpm raw=82
+2026-07-27 16:50:58,970 | INFO | Watchdog wurde durch Benutzer beendet.
+2026-07-27 16:50:58,971 | INFO | Modbus-Verbindung geschlossen.
+2026-07-27 17:00:04,422 | INFO | Watchdog wird gestartet.
+2026-07-27 17:00:04,422 | INFO | Modbus RTU Verbindung wird aufgebaut.
+2026-07-27 17:00:04,423 | INFO | Modbus-Verbindung erfolgreich hergestellt.
+2026-07-27 17:00:04,669 | INFO | Rücklauftemperatur: 0.0 °C raw=0
+2026-07-27 17:00:04,669 | INFO | Außentemperatur: 0.0 °C raw=0
+2026-07-27 17:00:04,669 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:00:04,670 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:00:04,670 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:00:09,916 | INFO | Rücklauftemperatur: 0.0 °C raw=0
+2026-07-27 17:00:09,916 | INFO | Außentemperatur: 0.0 °C raw=0
+2026-07-27 17:00:09,916 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:00:09,917 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:00:09,917 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:00:15,159 | INFO | Rücklauftemperatur: 0.0 °C raw=0
+2026-07-27 17:00:15,160 | INFO | Außentemperatur: 0.0 °C raw=0
+2026-07-27 17:00:15,194 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:00:15,195 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:00:15,195 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:00:20,437 | INFO | Rücklauftemperatur: 0.0 °C raw=0
+2026-07-27 17:00:20,437 | INFO | Außentemperatur: 0.0 °C raw=0
+2026-07-27 17:00:20,472 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:00:20,472 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:00:20,473 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:00:25,719 | INFO | Rücklauftemperatur: 0.0 °C raw=0
+2026-07-27 17:00:25,719 | INFO | Außentemperatur: 0.0 °C raw=0
+2026-07-27 17:00:25,754 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:00:25,754 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:00:25,754 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:00:30,996 | INFO | Rücklauftemperatur: 0.0 °C raw=0
+2026-07-27 17:00:30,996 | INFO | Außentemperatur: 0.0 °C raw=0
+2026-07-27 17:00:31,031 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:00:31,031 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:00:31,031 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:00:36,274 | INFO | Rücklauftemperatur: 0.0 °C raw=0
+2026-07-27 17:00:36,274 | INFO | Außentemperatur: 0.0 °C raw=0
+2026-07-27 17:00:36,283 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:00:36,284 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:00:36,284 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:00:41,522 | INFO | Rücklauftemperatur: 0.0 °C raw=0
+2026-07-27 17:00:41,522 | INFO | Außentemperatur: 0.0 °C raw=0
+2026-07-27 17:00:41,557 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:00:41,557 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:00:41,557 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:00:46,799 | INFO | Rücklauftemperatur: 0.0 °C raw=0
+2026-07-27 17:00:46,800 | INFO | Außentemperatur: 0.0 °C raw=0
+2026-07-27 17:00:46,834 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:00:46,835 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:00:46,835 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:00:52,075 | INFO | Rücklauftemperatur: 0.0 °C raw=0
+2026-07-27 17:00:52,076 | INFO | Außentemperatur: 0.0 °C raw=0
+2026-07-27 17:00:52,111 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:00:52,111 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:00:52,111 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:00:57,353 | INFO | Rücklauftemperatur: 0.0 °C raw=0
+2026-07-27 17:00:57,354 | INFO | Außentemperatur: 0.0 °C raw=0
+2026-07-27 17:00:57,363 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:00:57,363 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:00:57,364 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:01:02,601 | INFO | Rücklauftemperatur: 0.0 °C raw=0
+2026-07-27 17:01:02,602 | INFO | Außentemperatur: 0.0 °C raw=0
+2026-07-27 17:01:02,636 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:01:02,636 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:01:02,636 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:01:07,879 | INFO | Rücklauftemperatur: 0.0 °C raw=0
+2026-07-27 17:01:07,879 | INFO | Außentemperatur: 0.0 °C raw=0
+2026-07-27 17:01:07,888 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:01:07,889 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:01:07,889 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:01:12,292 | INFO | Watchdog wurde durch Benutzer beendet.
+2026-07-27 17:01:12,294 | INFO | Modbus-Verbindung geschlossen.
+2026-07-27 17:01:38,688 | INFO | Watchdog wird gestartet.
+2026-07-27 17:01:38,689 | INFO | Modbus RTU Verbindung wird aufgebaut.
+2026-07-27 17:01:38,691 | INFO | Modbus-Verbindung erfolgreich hergestellt.
+2026-07-27 17:01:38,923 | INFO | Rücklauftemperatur: 2.2 °C raw=22
+2026-07-27 17:01:38,924 | INFO | Außentemperatur: 2.9000000000000004 °C raw=29
+2026-07-27 17:01:38,924 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:01:38,924 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:01:38,925 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:01:44,154 | INFO | Rücklauftemperatur: 2.2 °C raw=22
+2026-07-27 17:01:44,154 | INFO | Außentemperatur: 2.9000000000000004 °C raw=29
+2026-07-27 17:01:44,155 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:01:44,155 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:01:44,155 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:01:49,402 | INFO | Rücklauftemperatur: 2.2 °C raw=22
+2026-07-27 17:01:49,402 | INFO | Außentemperatur: 2.9000000000000004 °C raw=29
+2026-07-27 17:01:49,412 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:01:49,412 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:01:49,412 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:01:54,650 | INFO | Rücklauftemperatur: 2.2 °C raw=22
+2026-07-27 17:01:54,651 | INFO | Außentemperatur: 2.9000000000000004 °C raw=29
+2026-07-27 17:01:54,685 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:01:54,685 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:01:54,686 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:01:59,927 | INFO | Rücklauftemperatur: 2.2 °C raw=22
+2026-07-27 17:01:59,962 | INFO | Außentemperatur: 2.9000000000000004 °C raw=29
+2026-07-27 17:01:59,962 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:01:59,963 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:01:59,963 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:02:05,206 | INFO | Rücklauftemperatur: 3.1 °C raw=31
+2026-07-27 17:02:05,206 | INFO | Außentemperatur: 2.9000000000000004 °C raw=29
+2026-07-27 17:02:05,241 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:02:05,241 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:02:05,242 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:02:10,484 | INFO | Rücklauftemperatur: 3.2 °C raw=32
+2026-07-27 17:02:10,485 | INFO | Außentemperatur: 2.9000000000000004 °C raw=29
+2026-07-27 17:02:10,494 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:02:10,494 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:02:10,495 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:02:15,729 | INFO | Rücklauftemperatur: 3.2 °C raw=32
+2026-07-27 17:02:15,729 | INFO | Außentemperatur: 2.9000000000000004 °C raw=29
+2026-07-27 17:02:15,738 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:02:15,739 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:02:15,739 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:02:20,976 | INFO | Rücklauftemperatur: 3.2 °C raw=32
+2026-07-27 17:02:20,977 | INFO | Außentemperatur: 2.9000000000000004 °C raw=29
+2026-07-27 17:02:20,977 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:02:20,977 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:02:20,977 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:02:26,224 | INFO | Rücklauftemperatur: 3.2 °C raw=32
+2026-07-27 17:02:26,224 | INFO | Außentemperatur: 2.9000000000000004 °C raw=29
+2026-07-27 17:02:26,259 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:02:26,259 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:02:26,259 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:02:31,501 | INFO | Rücklauftemperatur: 3.2 °C raw=32
+2026-07-27 17:02:31,502 | INFO | Außentemperatur: 2.9000000000000004 °C raw=29
+2026-07-27 17:02:31,536 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:02:31,536 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:02:31,537 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:02:36,779 | INFO | Rücklauftemperatur: 3.2 °C raw=32
+2026-07-27 17:02:36,780 | INFO | Außentemperatur: 2.9000000000000004 °C raw=29
+2026-07-27 17:02:36,814 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:02:36,814 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:02:36,815 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:02:39,291 | INFO | Watchdog wurde durch Benutzer beendet.
+2026-07-27 17:02:39,293 | INFO | Modbus-Verbindung geschlossen.
+2026-07-27 17:03:25,537 | INFO | Watchdog wird gestartet.
+2026-07-27 17:03:25,537 | INFO | Modbus RTU Verbindung wird aufgebaut.
+2026-07-27 17:03:25,539 | INFO | Modbus-Verbindung erfolgreich hergestellt.
+2026-07-27 17:03:25,780 | INFO | Rücklauftemperatur: 3.2 °C raw=32
+2026-07-27 17:03:25,781 | INFO | Außentemperatur: 29 °C raw=29
+2026-07-27 17:03:25,781 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:03:25,781 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:03:25,782 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:03:31,025 | INFO | Rücklauftemperatur: 3.2 °C raw=32
+2026-07-27 17:03:31,025 | INFO | Außentemperatur: 29 °C raw=29
+2026-07-27 17:03:31,025 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:03:31,026 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:03:31,026 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:03:36,259 | INFO | Rücklauftemperatur: 3.2 °C raw=32
+2026-07-27 17:03:36,260 | INFO | Außentemperatur: 29 °C raw=29
+2026-07-27 17:03:36,294 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:03:36,294 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:03:36,295 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:03:41,533 | INFO | Rücklauftemperatur: 3.2 °C raw=32
+2026-07-27 17:03:41,534 | INFO | Außentemperatur: 29 °C raw=29
+2026-07-27 17:03:41,568 | INFO | Verdichterdrehzahl: 0 rpm raw=0
+2026-07-27 17:03:41,569 | INFO | Stromaufnahme Verdichter 1: 0 A raw=0
+2026-07-27 17:03:41,569 | INFO | Betriebsart: 0 rpm raw=0
+2026-07-27 17:03:43,340 | INFO | Watchdog wurde durch Benutzer beendet.
+2026-07-27 17:03:43,341 | INFO | Modbus-Verbindung geschlossen.

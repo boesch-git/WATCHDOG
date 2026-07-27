@@ -2,15 +2,15 @@
 
 REGISTER_MAP = {
     "user_outlet_temperature": {
-        "address": 0,
+        "address": 244,
         "count": 1,
         "type": "holding",
-        "scale": 0.1,
+        "scale": 1,
         "unit": "°C",
         "description": "Vorlauftemperatur",
     },
     "user_outlet_temperature": {
-        "address": 1,
+        "address": 245,
         "count": 1,
         "type": "holding",
         "scale": 0.1,
@@ -18,19 +18,34 @@ REGISTER_MAP = {
         "description": "Rücklauftemperatur",
     },
     "outdoor_temperature": {
-        "address": 2,
+        "address": 247,
         "count": 1,
         "type": "holding",
-        "scale": 0.1,
+        "scale": 1,
         "unit": "°C",
         "description": "Außentemperatur",
     },
     "compressor_speed": {
-        "address": 10,
+        "address": 248,
         "count": 1,
         "type": "holding",
         "scale": 1,
         "unit": "rpm",
         "description": "Verdichterdrehzahl",
     },
+    "compressor_current": {
+        "address": 249,
+        "count": 1,
+        "type": "holding",
+        "scale": 1,
+        "unit": "A",
+        "description": "Stromaufnahme Verdichter 1",
+    },"operating_mode": {
+            "address": 248,
+            "count": 1,
+            "type": "holding",
+            "scale": 1,
+            "unit": "rpm",
+            "description": "Betriebsart",
+        },
 }
