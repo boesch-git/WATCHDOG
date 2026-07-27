@@ -20,3 +20,40 @@ Whether this is realized with NODE red or Graphana or whatever is yet to be defi
 
 Documentation will be hopefully available. 
 
+
+Ziele wie von Copilot vorgeschlagen:
+
+Verbindung über USB-Schnittstellenwandler
+
+z. B. USB-RS485, USB-RS232 oder USB-Modbus-Adapter
+zyklisches Auslesen von Betriebsdaten
+
+Daten erfassen
+
+Temperaturen
+Drücke
+Verdichterstatus
+Pumpenstatus
+Fehlermeldungen
+Leistungswerte
+Betriebszustände
+
+Daten lokal speichern
+
+idealerweise in einer SQLite-Datenbank
+keine Serverinstallation nötig
+eine einzelne .db-Datei reicht
+
+Daten grafisch darstellen
+
+Zeitverläufe
+Trends
+Betriebszustände
+Export für Serviceberichte
+
+Notfalltauglich sein
+
+einfach startbar
+robust bei Verbindungsabbrüchen
+Logging von Fehlern
+später eventuell als .exe paketierbar
