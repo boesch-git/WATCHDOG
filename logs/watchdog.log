@@ -6055,3 +6055,91 @@
 2026-07-28 11:26:26,072 | INFO | Sollwert | Adresse 1 | Wert: 33 °C | Rohwert: 33
 2026-07-28 11:26:30,454 | INFO | Watchdog wurde durch Benutzer beendet.
 2026-07-28 11:26:30,456 | INFO | Modbus-Port geschlossen.
+2026-07-28 15:57:05,757 | INFO | Watchdog wird gestartet.
+2026-07-28 15:57:05,757 | INFO | Modbus RTU Port: /dev/ttyUSB0
+2026-07-28 15:57:05,757 | INFO | Baudrate: 9600
+2026-07-28 15:57:05,757 | INFO | Slave-ID: 1
+2026-07-28 15:57:05,763 | INFO | Datenbank erfolgreich geöffnet.
+2026-07-28 15:57:05,764 | INFO | Modbus-Port erfolgreich geöffnet.
+2026-07-28 15:57:06,142 | INFO | Vorlauftemperatur | Adresse 244 | Wert: 16 °C | Rohwert: 16 | gespeichert
+2026-07-28 15:57:06,143 | INFO | Rücklauftemperatur | Adresse 245 | Wert: 18 °C | Rohwert: 18 | gespeichert
+2026-07-28 15:57:06,143 | INFO | Außentemperatur | Adresse 247 | Wert: 22 °C | Rohwert: 22 | gespeichert
+2026-07-28 15:57:06,143 | INFO | Verdichterdrehzahl | Adresse 248 | Wert: 0 rpm | Rohwert: 0 | gespeichert
+2026-07-28 15:57:06,143 | INFO | Stromaufnahme Verdichter 1 | Adresse 249 | Wert: 0 A | Rohwert: 0 | gespeichert
+2026-07-28 15:57:06,144 | INFO | Betriebsart | Adresse 0 | Wert: 8  | Rohwert: 8 | gespeichert
+2026-07-28 15:57:06,144 | INFO | Pumpendrehzahl | Adresse 137 | Wert: 100 % | Rohwert: 100 | gespeichert
+2026-07-28 15:57:06,144 | INFO | Sollwert | Adresse 1 | Wert: 33 °C | Rohwert: 33 | gespeichert
+2026-07-28 15:57:11,532 | INFO | Vorlauftemperatur | Adresse 244 | Wert: 16 °C | Rohwert: 16 | gespeichert
+2026-07-28 15:57:11,532 | INFO | Rücklauftemperatur | Adresse 245 | Wert: 18 °C | Rohwert: 18 | gespeichert
+2026-07-28 15:57:11,532 | INFO | Außentemperatur | Adresse 247 | Wert: 22 °C | Rohwert: 22 | gespeichert
+2026-07-28 15:57:11,533 | INFO | Verdichterdrehzahl | Adresse 248 | Wert: 0 rpm | Rohwert: 0 | gespeichert
+2026-07-28 15:57:11,533 | INFO | Stromaufnahme Verdichter 1 | Adresse 249 | Wert: 0 A | Rohwert: 0 | gespeichert
+2026-07-28 15:57:11,533 | INFO | Betriebsart | Adresse 0 | Wert: 8  | Rohwert: 8 | gespeichert
+2026-07-28 15:57:11,533 | INFO | Pumpendrehzahl | Adresse 137 | Wert: 100 % | Rohwert: 100 | gespeichert
+2026-07-28 15:57:11,533 | INFO | Sollwert | Adresse 1 | Wert: 33 °C | Rohwert: 33 | gespeichert
+2026-07-28 15:57:16,922 | INFO | Vorlauftemperatur | Adresse 244 | Wert: 16 °C | Rohwert: 16 | gespeichert
+2026-07-28 15:57:16,957 | INFO | Rücklauftemperatur | Adresse 245 | Wert: 18 °C | Rohwert: 18 | gespeichert
+2026-07-28 15:57:16,957 | INFO | Außentemperatur | Adresse 247 | Wert: 22 °C | Rohwert: 22 | gespeichert
+2026-07-28 15:57:16,957 | INFO | Verdichterdrehzahl | Adresse 248 | Wert: 0 rpm | Rohwert: 0 | gespeichert
+2026-07-28 15:57:16,957 | INFO | Stromaufnahme Verdichter 1 | Adresse 249 | Wert: 0 A | Rohwert: 0 | gespeichert
+2026-07-28 15:57:16,958 | INFO | Betriebsart | Adresse 0 | Wert: 8  | Rohwert: 8 | gespeichert
+2026-07-28 15:57:16,958 | INFO | Pumpendrehzahl | Adresse 137 | Wert: 100 % | Rohwert: 100 | gespeichert
+2026-07-28 15:57:16,958 | INFO | Sollwert | Adresse 1 | Wert: 33 °C | Rohwert: 33 | gespeichert
+2026-07-28 15:57:22,346 | INFO | Vorlauftemperatur | Adresse 244 | Wert: 16 °C | Rohwert: 16 | gespeichert
+2026-07-28 15:57:22,381 | INFO | Rücklauftemperatur | Adresse 245 | Wert: 18 °C | Rohwert: 18 | gespeichert
+2026-07-28 15:57:22,381 | INFO | Außentemperatur | Adresse 247 | Wert: 22 °C | Rohwert: 22 | gespeichert
+2026-07-28 15:57:22,381 | INFO | Verdichterdrehzahl | Adresse 248 | Wert: 0 rpm | Rohwert: 0 | gespeichert
+2026-07-28 15:57:22,381 | INFO | Stromaufnahme Verdichter 1 | Adresse 249 | Wert: 0 A | Rohwert: 0 | gespeichert
+2026-07-28 15:57:22,382 | INFO | Betriebsart | Adresse 0 | Wert: 8  | Rohwert: 8 | gespeichert
+2026-07-28 15:57:22,382 | INFO | Pumpendrehzahl | Adresse 137 | Wert: 100 % | Rohwert: 100 | gespeichert
+2026-07-28 15:57:22,382 | INFO | Sollwert | Adresse 1 | Wert: 33 °C | Rohwert: 33 | gespeichert
+2026-07-28 15:57:27,766 | INFO | Vorlauftemperatur | Adresse 244 | Wert: 16 °C | Rohwert: 16 | gespeichert
+2026-07-28 15:57:27,801 | INFO | Rücklauftemperatur | Adresse 245 | Wert: 18 °C | Rohwert: 18 | gespeichert
+2026-07-28 15:57:27,801 | INFO | Außentemperatur | Adresse 247 | Wert: 22 °C | Rohwert: 22 | gespeichert
+2026-07-28 15:57:27,802 | INFO | Verdichterdrehzahl | Adresse 248 | Wert: 0 rpm | Rohwert: 0 | gespeichert
+2026-07-28 15:57:27,802 | INFO | Stromaufnahme Verdichter 1 | Adresse 249 | Wert: 0 A | Rohwert: 0 | gespeichert
+2026-07-28 15:57:27,802 | INFO | Betriebsart | Adresse 0 | Wert: 8  | Rohwert: 8 | gespeichert
+2026-07-28 15:57:27,802 | INFO | Pumpendrehzahl | Adresse 137 | Wert: 100 % | Rohwert: 100 | gespeichert
+2026-07-28 15:57:27,802 | INFO | Sollwert | Adresse 1 | Wert: 33 °C | Rohwert: 33 | gespeichert
+2026-07-28 15:57:33,189 | INFO | Vorlauftemperatur | Adresse 244 | Wert: 16 °C | Rohwert: 16 | gespeichert
+2026-07-28 15:57:33,190 | INFO | Rücklauftemperatur | Adresse 245 | Wert: 18 °C | Rohwert: 18 | gespeichert
+2026-07-28 15:57:33,190 | INFO | Außentemperatur | Adresse 247 | Wert: 22 °C | Rohwert: 22 | gespeichert
+2026-07-28 15:57:33,190 | INFO | Verdichterdrehzahl | Adresse 248 | Wert: 0 rpm | Rohwert: 0 | gespeichert
+2026-07-28 15:57:33,191 | INFO | Stromaufnahme Verdichter 1 | Adresse 249 | Wert: 0 A | Rohwert: 0 | gespeichert
+2026-07-28 15:57:33,191 | INFO | Betriebsart | Adresse 0 | Wert: 8  | Rohwert: 8 | gespeichert
+2026-07-28 15:57:33,191 | INFO | Pumpendrehzahl | Adresse 137 | Wert: 100 % | Rohwert: 100 | gespeichert
+2026-07-28 15:57:33,191 | INFO | Sollwert | Adresse 1 | Wert: 33 °C | Rohwert: 33 | gespeichert
+2026-07-28 15:57:38,581 | INFO | Vorlauftemperatur | Adresse 244 | Wert: 16 °C | Rohwert: 16 | gespeichert
+2026-07-28 15:57:38,581 | INFO | Rücklauftemperatur | Adresse 245 | Wert: 18 °C | Rohwert: 18 | gespeichert
+2026-07-28 15:57:38,581 | INFO | Außentemperatur | Adresse 247 | Wert: 22 °C | Rohwert: 22 | gespeichert
+2026-07-28 15:57:38,581 | INFO | Verdichterdrehzahl | Adresse 248 | Wert: 0 rpm | Rohwert: 0 | gespeichert
+2026-07-28 15:57:38,581 | INFO | Stromaufnahme Verdichter 1 | Adresse 249 | Wert: 0 A | Rohwert: 0 | gespeichert
+2026-07-28 15:57:38,581 | INFO | Betriebsart | Adresse 0 | Wert: 8  | Rohwert: 8 | gespeichert
+2026-07-28 15:57:38,582 | INFO | Pumpendrehzahl | Adresse 137 | Wert: 100 % | Rohwert: 100 | gespeichert
+2026-07-28 15:57:38,582 | INFO | Sollwert | Adresse 1 | Wert: 33 °C | Rohwert: 33 | gespeichert
+2026-07-28 15:57:43,971 | INFO | Vorlauftemperatur | Adresse 244 | Wert: 16 °C | Rohwert: 16 | gespeichert
+2026-07-28 15:57:43,971 | INFO | Rücklauftemperatur | Adresse 245 | Wert: 18 °C | Rohwert: 18 | gespeichert
+2026-07-28 15:57:43,972 | INFO | Außentemperatur | Adresse 247 | Wert: 22 °C | Rohwert: 22 | gespeichert
+2026-07-28 15:57:43,972 | INFO | Verdichterdrehzahl | Adresse 248 | Wert: 0 rpm | Rohwert: 0 | gespeichert
+2026-07-28 15:57:43,972 | INFO | Stromaufnahme Verdichter 1 | Adresse 249 | Wert: 0 A | Rohwert: 0 | gespeichert
+2026-07-28 15:57:43,972 | INFO | Betriebsart | Adresse 0 | Wert: 8  | Rohwert: 8 | gespeichert
+2026-07-28 15:57:43,973 | INFO | Pumpendrehzahl | Adresse 137 | Wert: 100 % | Rohwert: 100 | gespeichert
+2026-07-28 15:57:43,973 | INFO | Sollwert | Adresse 1 | Wert: 33 °C | Rohwert: 33 | gespeichert
+2026-07-28 15:57:49,360 | INFO | Vorlauftemperatur | Adresse 244 | Wert: 16 °C | Rohwert: 16 | gespeichert
+2026-07-28 15:57:49,361 | INFO | Rücklauftemperatur | Adresse 245 | Wert: 18 °C | Rohwert: 18 | gespeichert
+2026-07-28 15:57:49,361 | INFO | Außentemperatur | Adresse 247 | Wert: 22 °C | Rohwert: 22 | gespeichert
+2026-07-28 15:57:49,362 | INFO | Verdichterdrehzahl | Adresse 248 | Wert: 0 rpm | Rohwert: 0 | gespeichert
+2026-07-28 15:57:49,362 | INFO | Stromaufnahme Verdichter 1 | Adresse 249 | Wert: 0 A | Rohwert: 0 | gespeichert
+2026-07-28 15:57:49,362 | INFO | Betriebsart | Adresse 0 | Wert: 8  | Rohwert: 8 | gespeichert
+2026-07-28 15:57:49,362 | INFO | Pumpendrehzahl | Adresse 137 | Wert: 100 % | Rohwert: 100 | gespeichert
+2026-07-28 15:57:49,363 | INFO | Sollwert | Adresse 1 | Wert: 33 °C | Rohwert: 33 | gespeichert
+2026-07-28 15:57:54,748 | INFO | Vorlauftemperatur | Adresse 244 | Wert: 16 °C | Rohwert: 16 | gespeichert
+2026-07-28 15:57:54,749 | INFO | Rücklauftemperatur | Adresse 245 | Wert: 18 °C | Rohwert: 18 | gespeichert
+2026-07-28 15:57:54,749 | INFO | Außentemperatur | Adresse 247 | Wert: 21 °C | Rohwert: 21 | gespeichert
+2026-07-28 15:57:54,749 | INFO | Verdichterdrehzahl | Adresse 248 | Wert: 0 rpm | Rohwert: 0 | gespeichert
+2026-07-28 15:57:54,750 | INFO | Stromaufnahme Verdichter 1 | Adresse 249 | Wert: 0 A | Rohwert: 0 | gespeichert
+2026-07-28 15:57:54,750 | INFO | Betriebsart | Adresse 0 | Wert: 8  | Rohwert: 8 | gespeichert
+2026-07-28 15:57:54,750 | INFO | Pumpendrehzahl | Adresse 137 | Wert: 100 % | Rohwert: 100 | gespeichert
+2026-07-28 15:57:54,750 | INFO | Sollwert | Adresse 1 | Wert: 33 °C | Rohwert: 33 | gespeichert
+2026-07-28 15:57:58,468 | INFO | Watchdog wurde durch Benutzer beendet.
+2026-07-28 15:57:58,509 | INFO | Modbus-Port und Datenbank geschlossen.
