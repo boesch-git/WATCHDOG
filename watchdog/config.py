@@ -16,3 +16,7 @@ MODBUS_CONFIG = {
 APP_CONFIG = {
     "log_file": "logs/watchdog.log",
 }
+
+DATABASE_CONFIG = {
+    "path": "data/watchdog.db",
+}
