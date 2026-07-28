@@ -27,73 +27,54 @@ class WatchdogModbusClient:
     def close(self):
         self.client.close()
 
-    def _read_holding_registers(self, address, count):
-        parameters = inspect.signature(
-            self.client.read_holding_registers
-        ).parameters
+    def _call_with_slave_id(self, method, address, count):
+        parameters = inspect.signature(method).parameters
 
         if "slave" in parameters:
-            return self.client.read_holding_registers(
+            return method(
                 address=address,
                 count=count,
                 slave=self.slave_id,
             )
 
         if "unit" in parameters:
-            return self.client.read_holding_registers(
+            return method(
                 address=address,
                 count=count,
                 unit=self.slave_id,
             )
 
         if "device_id" in parameters:
-            return self.client.read_holding_registers(
+            return method(
                 address=address,
                 count=count,
                 device_id=self.slave_id,
             )
 
-        return self.client.read_holding_registers(
+        return method(
+            address,
+            count,
+        )
+
+    def _read_holding_registers(self, address, count):
+        return self._call_with_slave_id(
+            self.client.read_holding_registers,
             address,
             count,
         )
 
     def _read_input_registers(self, address, count):
-        parameters = inspect.signature(
-            self.client.read_input_registers
-        ).parameters
-
-        if "slave" in parameters:
-            return self.client.read_input_registers(
-                address=address,
-                count=count,
-                slave=self.slave_id,
-            )
-
-        if "unit" in parameters:
-            return self.client.read_input_registers(
-                address=address,
-                count=count,
-                unit=self.slave_id,
-            )
-
-        if "device_id" in parameters:
-            return self.client.read_input_registers(
-                address=address,
-                count=count,
-                device_id=self.slave_id,
-            )
-
-        return self.client.read_input_registers(
+        return self._call_with_slave_id(
+            self.client.read_input_registers,
             address,
             count,
         )
-    
+
     def read_register(self, name, definition):
         register_type = definition["type"]
         address = definition["address"]
         count = definition["count"]
-        scale = definition["scale"]
+        scale = definition.get("scale", 1.0)
 
         if register_type == "holding":
             response = self._read_holding_registers(address, count)
@@ -112,8 +93,10 @@ class WatchdogModbusClient:
             "name": name,
             "raw_value": raw_value,
             "value": scaled_value,
-            "unit": definition["unit"],
-            "description": definition["description"],
+            "unit": definition.get("unit", ""),
+            "description": definition.get("description", name),
+            "address": address,
+            "type": register_type,
         }
 
     def read_all_registers(self):

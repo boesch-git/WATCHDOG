@@ -1,7 +1,7 @@
-# watchdog/main.py
+#watchdog/main.py
 
-import time
 import logging
+import time
 
 from watchdog.config import MODBUS_CONFIG
 from watchdog.logger import setup_logger
@@ -12,15 +12,17 @@ def run():
     setup_logger()
 
     logging.info("Watchdog wird gestartet.")
-    logging.info("Modbus RTU Verbindung wird aufgebaut.")
+    logging.info("Modbus RTU Port: %s", MODBUS_CONFIG["port"])
+    logging.info("Baudrate: %s", MODBUS_CONFIG["baudrate"])
+    logging.info("Slave-ID: %s", MODBUS_CONFIG["slave_id"])
 
     client = WatchdogModbusClient()
 
     if not client.connect():
-        logging.error("Verbindung zum Modbus-Gerät fehlgeschlagen.")
+        logging.error("Modbus-Port konnte nicht geöffnet werden.")
         return
 
-    logging.info("Modbus-Verbindung erfolgreich hergestellt.")
+    logging.info("Modbus-Port erfolgreich geöffnet.")
 
     try:
         while True:
@@ -29,8 +31,9 @@ def run():
 
                 for item in values.values():
                     logging.info(
-                        "%s: %s %s raw=%s",
+                        "%s | Adresse %s | Wert: %s %s | Rohwert: %s",
                         item["description"],
+                        item["address"],
                         item["value"],
                         item["unit"],
                         item["raw_value"],
@@ -46,4 +49,4 @@ def run():
 
     finally:
         client.close()
-        logging.info("Modbus-Verbindung geschlossen.")
+        logging.info("Modbus-Port geschlossen.")
