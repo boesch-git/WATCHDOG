@@ -3,7 +3,7 @@
 import sqlite3
 from pathlib import Path
 
-DATABASE_PATH = Path("data/watchdog.db")
+DATABASE_PATH = Path("../data/watchdog.db")
 
 def main():
     if not DATABASE_PATH.exists():
