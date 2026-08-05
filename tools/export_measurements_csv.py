@@ -1,4 +1,4 @@
-# tools/export_measurement_csv.py
+# tools/export_measurements_csv.py
 
 import argparse
 import csv
@@ -40,8 +40,6 @@ def build_query(name=None, limit=None, latest=False):
         query += " WHERE name = ?"
         parameters.append(name)
 
-    query += " ORDER BY timestamp_utc ASC"
-
     if latest:
         query += " ORDER BY timestamp_utc DESC"
     else:
@@ -60,7 +58,7 @@ def export_measurements(output_path, name=None, limit=None, latest=False):
         return
 
     output_path = Path(output_path)
-    output_path.parent.mkdir(exist_ok=True)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
 
     connection = sqlite3.connect(DATABASE_PATH)
     connection.row_factory = sqlite3.Row
@@ -95,7 +93,7 @@ def export_measurements(output_path, name=None, limit=None, latest=False):
     connection.close()
 
     print(f"CSV-Export abgeschlossen: {output_path}")
-    print(f"Exportierte Zeilen: {len:(rows)}")
+    print(f"Exportierte Zeilen: {len(rows)}")
 
 
 def main():
@@ -121,6 +119,7 @@ def main():
 
     parser.add_argument(
         "--latest",
+        action="store_true",
         help="Exportiert die neuesten Messwerte anstatt der ältesten.",
     )
 
