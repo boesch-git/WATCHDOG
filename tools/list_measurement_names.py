@@ -3,11 +3,12 @@
 import sqlite3
 from pathlib import Path
 
-DATABASE_PATH = Path("../data/watchdog.db")
+# database path muss noch geprüft werden, inwiefern der PATH relativ oder absolut sein muss.
+DATABASE_PATH = Path("data/watchdog.db")
 
 def main():
     if not DATABASE_PATH.exists():
-        print("Datenbank existiert nicht:", DATABASE_PATH)
+        print("Datenbank existiert nicht! Du Obereumel:", DATABASE_PATH)
         return
 
     connection = sqlite3.connect(DATABASE_PATH)
