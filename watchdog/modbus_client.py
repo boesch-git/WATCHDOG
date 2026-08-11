@@ -22,10 +22,40 @@ class WatchdogModbusClient:
         self.slave_id = MODBUS_CONFIG["slave_id"]
 
     def connect(self):
+        #"""
+        # Öffnet den seriellen Port. 
+
+        # Achtung:
+        # Ein True bestätigt nur, dass der Port geöffnet wurde. 
+        # Es bestätigt noch nicht, dass der Modbus-Regler antwortet. 
+        # """
         return self.client.connect()
 
     def close(self):
-        self.client.close()
+        # """
+        # Schließt den seriellen Port. 
+
+        # Die methode darf auch aufgerufen werden, wenn der Port bereits geschlossen ist.
+        # """
+        try:
+            self.client.close()
+        except Exception:
+            pass
+
+    def reconnect(self):
+        # """
+        # Schließt eine möglicherweise vorhandene Verbindung und öffnet den seriellen Port anschließend erneut.
+        # """
+        self.close()
+        return self.connect()
+    
+    @property
+    def connected(self):
+        # """
+        # Gibt an, ob der serielle Port aktuell geöffnet ist.
+        # """
+        # return bool(self.client.connected) # kann zu Problemen führen, deswegen wie folgt:
+        return bool(getattr(self.client, "connected", False))
 
     def _call_with_slave_id(self, method, address, count):
         parameters = inspect.signature(method).parameters
@@ -83,8 +113,18 @@ class WatchdogModbusClient:
         else:
             raise ValueError(f"Unbekannter Registertyp: {register_type}")
 
+        # # deprecated
+        # if response.isError():
+        #     raise RuntimeError(f"Fehler beim Lesen von {name}: {response}")
         if response.isError():
-            raise RuntimeError(f"Fehler beim Lesen von {name}: {response}")
+            raise RuntimeError(
+                f"Modbus-Fehler beim Lesen von '{name}': "
+                f"Registertyp= {register_type}, "
+                f"Adresse={address}, "
+                f"Anzahl={count}, "
+                f"Slave-ID={self.slave_id}, "
+                f"Antwort={response}"
+            )
 
         raw_value = response.registers[0]
         scaled_value = raw_value * scale

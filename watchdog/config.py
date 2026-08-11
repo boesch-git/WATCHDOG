@@ -11,6 +11,9 @@ MODBUS_CONFIG = {
     "timeout": 2,
     "slave_id": 1,
     "poll_interval_seconds": 5,
+
+    #Wartezeit nach Kommunikationsfehlern
+    "reconnect_interval_seconds": 60,
 }
 
 APP_CONFIG = {
