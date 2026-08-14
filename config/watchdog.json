@@ -1,0 +1,26 @@
+{
+  "application": {
+    "name": "Watchdog",
+    "log_file": "logs/watchdog.log",
+    "log_level": "INFO"
+  },
+  "modbus": {
+    "port": "/dev/serial/by-id/usb-FTDI_FT232R_USB_UART-if00-port0",
+    "baudrate": 9600,
+    "parity": "N",
+    "stopbits": 1,
+    "bytesize": 8,
+    "timeout": 2,
+    "slave_id": 1,
+    "poll_interval_seconds": 5,
+    "reconnect_interval_seconds": 60
+  },
+  "database": {
+    "path": "data/watchdog.db",
+    "journal_mode": "WAL",
+    "synchronous": "NORMAL"
+  },
+  "registers": {
+    "path": "config/registers.json"
+  }
+}

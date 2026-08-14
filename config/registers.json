@@ -1,0 +1,68 @@
+{
+  "registers": {
+    "user_outlet_temperature": {
+      "address": 244,
+      "count": 1,
+      "type": "holding",
+      "scale": 1,
+      "unit": "°C",
+      "description": "Vorlauftemperatur"
+    },
+    "user_inlet_temperature": {
+      "address": 245,
+      "count": 1,
+      "type": "holding",
+      "scale": 1,
+      "unit": "°C",
+      "description": "Rücklauftemperatur"
+    },
+    "outdoor_temperature": {
+      "address": 247,
+      "count": 1,
+      "type": "holding",
+      "scale": 1,
+      "unit": "°C",
+      "description": "Außentemperatur"
+    },
+    "compressor_speed": {
+      "address": 248,
+      "count": 1,
+      "type": "holding",
+      "scale": 1,
+      "unit": "rpm",
+      "description": "Verdichterdrehzahl"
+    },
+    "compressor1_current": {
+      "address": 249,
+      "count": 1,
+      "type": "holding",
+      "scale": 1,
+      "unit": "A",
+      "description": "Stromaufnahme Verdichter 1"
+    },
+    "operating_mode": {
+      "address": 0,
+      "count": 1,
+      "type": "holding",
+      "scale": 1,
+      "unit": "",
+      "description": "Betriebsart"
+    },
+    "pump_running_speed": {
+      "address": 137,
+      "count": 1,
+      "type": "holding",
+      "scale": 1,
+      "unit": "%",
+      "description": "Pumpendrehzahl"
+    },
+    "setpoint": {
+      "address": 1,
+      "count": 1,
+      "type": "holding",
+      "scale": 1,
+      "unit": "°C",
+      "description": "Sollwert"
+    }
+  }
+}
