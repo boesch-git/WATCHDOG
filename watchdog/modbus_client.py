@@ -8,8 +8,8 @@ import inspect
 
 from pymodbus.client import ModbusSerialClient
 
-from watchdog.config import MODBUS_CONFIG
-from watchdog.register_map import REGISTER_MAP
+from watchdog.config import MODBUS_CONFIG, REGISTER_MAP
+# from watchdog.register_map import REGISTER_MAP # deprecated due to added JSON config file
 
 
 class WatchdogModbusClient:

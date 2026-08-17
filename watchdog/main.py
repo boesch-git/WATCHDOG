@@ -1,144 +1,182 @@
 #watchdog/main.py
-#
-# Copyright (c) 2026 G. Aue, N. Diedrich. Licensed under the MIT License.
-#
-
 
 import logging
 import time
+from pathlib import Path
 
 from watchdog.config import MODBUS_CONFIG
 from watchdog.database import WatchdogDatabase
 from watchdog.logger import setup_logger
 from watchdog.modbus_client import WatchdogModbusClient
 
+
 def wait_interruptible(seconds):
-    # """
-    # Wartet die angegebene Anzahl Sekunden.
+    """
+    Wartet in kurzen Schritten, damit Watchdog während der Wartezeit
+    mit Strg+C beendet werden kann.
+    """
+    end_time = time.monotonic() + float(seconds)
 
-    # Die Wartezeit wird in Ein-Sekunden-Schritten durchgeführt, damit das Programm mit Strg+C schnell beendet werden kann. 
-    # """
-    for _ in range(seconds):
-        time.sleep(1)
+    while time.monotonic() < end_time:
+        remaining = end_time - time.monotonic()
+        time.sleep(min(1.0, remaining))
 
 
-def log_communication_error(error):
-    # """
-    # Gibt eine Fehlermeldung abhängig vom aufgetretenen Fehlertyp aus. 
-    # """
-    error_type = type(error).__name__
-    error_message = str(error) or "Keine zusätzliche Fehlerbeschreibung"
+def serial_port_exists(port):
+    """
+    Prüft, ob der konfigurierte Gerätepfad existiert.
 
-    logging.error(
-        "Kommunikationsfehler erkannt | Typ: %s | Meldung: %s",
-        error_type,
-        error_message,
-    )
+    Unterstützt sowohl /dev/ttyUSB0 als auch symbolische Links unter
+    /dev/serial/by-id/.
+    """
+    return Path(port).exists()
 
-    message_lower = error_message.lower()
-    #permission denied
-    if "permission denied" in message_lower:
+
+def log_connection_error(port, error=None):
+    """
+    Klassifiziert typische Fehler beim Öffnen des seriellen Ports
+    und gibt eine verständliche Fehlermeldung aus.
+    """
+    if not serial_port_exists(port):
         logging.error(
-            "Keine Berechtigung für die serielle Schnittstelle."
-            "prüfe die Mitgliedschaft in der Gruppe 'dialout'."
+            "Kein USB-Schnittstellenwandler gefunden oder angeschlossen."
+        )
+        logging.error(
+            "Der konfigurierte Gerätepfad existiert nicht: %s",
+            port,
+        )
+        logging.error(
+            "Prüfe den angeschlossenen Adapter mit: "
+            "ls -la /dev/serial/by-id/"
+        )
+        return
+
+    if error is None:
+        logging.error(
+            "Der Modbus-Port konnte nicht geöffnet werden: %s",
+            port,
+        )
+        return
+
+    error_text = str(error).lower()
+
+    if "permission denied" in error_text:
+        logging.error(
+            "Keine Berechtigung zum Öffnen des "
+            "Schnittstellenwandlers: %s",
+            port,
+        )
+        logging.error(
+            "Prüfe die Benutzergruppen mit 'groups'. "
+            "Der Benutzer sollte Mitglied der Gruppe 'dialout' sein."
         )
 
-    #no such file
-    elif "no such file" in message_lower:
+    elif (
+        "device or resource busy" in error_text
+        or "resource busy" in error_text
+    ):
         logging.error(
-            "Die konfigurierte serielle Schnittstelle wurde nicht gefunden: %s",
-            MODBUS_CONFIG["port"],
+            "Der Schnittstellenwandler wird bereits von einem "
+            "anderen Programm verwendet: %s",
+            port,
         )
 
-    #port not able to being open
-    elif "could not open port" in message_lower:
+    elif (
+        "no such file or directory" in error_text
+        or "could not open port" in error_text
+    ):
         logging.error(
-            "Der serielle Port %s konnte nicht geöffnet werden. "
-            "Möglicherweise wurde der Adapter entfernt oder der Port wird von einem anderen Programm verwendet. ",
-            MODBUS_CONFIG["port"],
-        )
-            
-
-    #timeout or no response 
-    elif "timeout" in message_lower or "no response" in message_lower:
-        logging.error(
-            "Die Anlage antwortet nicht. "
-            "Prüfe Slave-ID, Baudrate, Parität, Registeradresse, Terminierung oder RS485-Verkabelung. "
+            "Kein USB-Schnittstellenwandler unter dem "
+            "konfigurierten Gerätepfad gefunden: %s",
+            port,
         )
 
-    #crc or checksum error
-    elif "crc" in message_lower or "checksum" in message_lower:
+    else:
         logging.error(
-            "Es wurde ein fehlerhaftes Modbus-Telegram empfangen. "
-            "Prüfe Verkabelung, Schirmung, Abschlusswiderstände und serielle Parameter. "
-        )
-
-    #illegal address
-    elif "illegal address" in message_lower:
-        logging.error(
-            "Der Regler meldet eine ungültige Registeradresse. "
-            "Prüfe Registertyp und nullbasierte Adressierung. "
-        )
-
-    #illegal function
-    elif "illegal function" in message_lower:
-        logging.error(
-            "Der Regler unterstützt die verwendete Modbus-Funktion nicht. "
-            "Prüfe, ob Holding Register oder Input Register gelesen werden müssen. "
+            "Der Schnittstellenwandler konnte nicht geöffnet werden "
+            "| Fehlertyp: %s | Meldung: %s",
+            type(error).__name__,
+            error,
         )
 
 
 def run():
     setup_logger()
 
-    reconnect_interval = MODBUS_CONFIG["reconnect_interval_seconds"]
-    poll_interval = MODBUS_CONFIG["poll_interval_seconds"]
+    # Wichtig: Diese Variablen werden einmal zu Beginn definiert und
+    # stehen damit in der gesamten run()-Funktion zur Verfügung.
+    port = MODBUS_CONFIG["port"]
+    poll_interval = float(
+        MODBUS_CONFIG["poll_interval_seconds"]
+    )
+    reconnect_interval = float(
+        MODBUS_CONFIG["reconnect_interval_seconds"]
+    )
 
     logging.info("=" * 60)
     logging.info("Watchdog wird gestartet.")
-    logging.info("Modbus RTU Port: %s", MODBUS_CONFIG["port"])
+    logging.info("Modbus RTU Port: %s", port)
     logging.info("Baudrate: %s", MODBUS_CONFIG["baudrate"])
     logging.info("Parität: %s", MODBUS_CONFIG["parity"])
     logging.info("Slave-ID: %s", MODBUS_CONFIG["slave_id"])
-    logging.info("Abfrageintervall: %s Sekunden", poll_interval)
-    logging.info("Wiederverbindungsintervall: %s Sekunden", reconnect_interval)
+    logging.info(
+        "Abfrageintervall: %s Sekunden",
+        poll_interval,
+    )
+    logging.info(
+        "Wiederverbindungsintervall: %s Sekunden",
+        reconnect_interval,
+    )
     logging.info("=" * 60)
 
-    client = WatchdogModbusClient()
     database = WatchdogDatabase()
+    modbus_client = None
 
     try:
         database.connect()
         logging.info("Datenbank erfolgreich geöffnet.")
 
-        if not client.connect():
-            logging.error("Modbus-Port konnte nicht geöffnet werden.")
-            return
-
-        logging.info("Modbus-Port erfolgreich geöffnet.")
-
+        # Äußere Schleife:
+        # Verbindung herstellen, bei Fehler warten und erneut versuchen.
         while True:
             try:
                 logging.info(
-                    "Öffne Modbus-Verbindung über %s ...",
-                    MODBUS_CONFIG["port"],
+                    "Versuche, den Schnittstellenwandler zu öffnen: %s",
+                    port,
                 )
 
-                if not client.connect():
+                # Vorherigen Client sicher schließen.
+                if modbus_client is not None:
+                    modbus_client.close()
+
+                # Für jeden Verbindungsversuch einen neuen Client erzeugen.
+                modbus_client = WatchdogModbusClient()
+
+                if not serial_port_exists(port):
+                    raise FileNotFoundError(
+                        f"Serieller Gerätepfad nicht vorhanden: {port}"
+                    )
+
+                connection_successful = modbus_client.connect()
+
+                if not connection_successful:
                     raise ConnectionError(
-                        f"Serieller Port {MODBUS_CONFIG['port']} "
-                        "konnte nicht geöffnet werden."
+                        f"Modbus-Port konnte nicht geöffnet werden: {port}"
                     )
 
                 logging.info(
-                    "Serieller Port wurde geöffnet. "
+                    "Schnittstellenwandler erfolgreich geöffnet."
+                )
+                logging.info(
                     "Teste die Kommunikation mit dem Modbus-Regler."
                 )
 
                 first_successful_read = True
 
+                # Innere Schleife:
+                # Solange die Kommunikation läuft, zyklisch lesen.
                 while True:
-                    values = client.read_all_registers()
+                    values = modbus_client.read_all_registers()
 
                     if first_successful_read:
                         logging.info(
@@ -149,7 +187,7 @@ def run():
 
                     database.insert_measurements(
                         measurements=values,
-                        source=MODBUS_CONFIG["port"],
+                        source=port,
                     )
 
                     for item in values.values():
@@ -166,26 +204,33 @@ def run():
                     wait_interruptible(poll_interval)
 
             except KeyboardInterrupt:
+                # Strg+C nicht als Kommunikationsfehler behandeln.
                 raise
 
             except Exception as error:
-                log_communication_error(error)
-
-                logging.warning(
-                    "Modbus-Verbindung wird geschlossen."
+                log_connection_error(
+                    port=port,
+                    error=error,
                 )
 
-                client.close()
+                if modbus_client is not None:
+                    modbus_client.close()
 
                 logging.warning(
-                    "Neuer Verbindungsversuch in %s Sekunden.",
+                    "Watchdog bleibt aktiv."
+                )
+                logging.warning(
+                    "Nächster Verbindungsversuch in %s Sekunden.",
                     reconnect_interval,
                 )
 
                 wait_interruptible(reconnect_interval)
 
                 logging.info(
-                    "Wartezeit beendet. Starte neuen Verbindungsversuch."
+                    "Wiederverbindungsintervall abgelaufen."
+                )
+                logging.info(
+                    "Starte einen neuen Verbindungsversuch."
                 )
 
     except KeyboardInterrupt:
@@ -195,13 +240,16 @@ def run():
 
     except Exception as error:
         logging.critical(
-            "Nicht behebbarer Programmfehler | Typ: %s | Meldung: %s",
+            "Nicht behebbarer Programmfehler | "
+            "Typ: %s | Meldung: %s",
             type(error).__name__,
             error,
         )
 
     finally:
-        client.close()
+        if modbus_client is not None:
+            modbus_client.close()
+
         database.close()
 
         logging.info("Modbus-Port geschlossen.")
