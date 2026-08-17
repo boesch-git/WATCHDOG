@@ -1,6 +1,8 @@
 # watchdog/modbus_client.py
 #
-# Copyright (c) 2026 G. Aue, N. Diedrich. Licensed under the MIT License.
+# Copyright (c) 2026 G. Aue, N. Diedrich. 
+# Unauthorized copying of this file, via any medium, is strictly prohibited.
+# Proprietary and confidential.
 #
 
 

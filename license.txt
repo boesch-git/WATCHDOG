@@ -1,0 +1,14 @@
+Copyright (c) 2026 G. Aue, N. Diedrich. Alle Rechte vorbehalten.
+
+Dieser Quellcode ist öffentlich einsehbar, darf jedoch ohne ausdrückliche 
+schriftliche Genehmigung des Urhebers weder kopiert, modifiziert, 
+weiterverbreitet noch in anderen Projekten (kommerziell oder privat) 
+verwendet werden.
+
+
+Copyright (c) 2026 G. Aue, N. Diedrich. All rights reserved.
+
+This source code is publicly visible for educational and review purposes only. 
+No part of this project may be copied, modified, distributed, or used in 
+any other project (commercial or private) without the express written 
+permission of the copyright holder.

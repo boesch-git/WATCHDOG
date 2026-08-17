@@ -1,17 +1,18 @@
 # tools/plot_measurements.py
 #
-# Copyright (c) 2026 G. Aue, N. Diedrich. Licensed under the MIT License.
+# Copyright (c) 2026 G. Aue, N. Diedrich. 
+# Unauthorized copying of this file, via any medium, is strictly prohibited.
+# Proprietary and confidential.
 #
 
 
 import argparse
 import sqlite3
-import matplotlib
 from datetime import datetime
 from pathlib import Path 
 
-import matplotlib.pyplot as plt
-import matplotlib.dates as mdates
+import matplotlib.pyplot as plt # type: ignore
+import matplotlib.dates as mdates # type: ignore
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
