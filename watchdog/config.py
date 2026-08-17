@@ -1,4 +1,7 @@
 # watchdog/config.py
+#
+# Copyright (c) 2026 G. Aue, N. Diedrich. Licensed under the MIT License.
+#
 
 #This is a temporary config file, later there will be probably an external watchdog.yaml or something. 
 

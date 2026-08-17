@@ -1,4 +1,8 @@
 # tools/export_measurements_csv.py
+#
+# Copyright (c) 2026 G. Aue, N. Diedrich. Licensed under the MIT License.
+#
+
 
 import argparse
 import csv

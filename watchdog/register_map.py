@@ -1,4 +1,8 @@
 # watchdog/register_map.py
+#
+# Copyright (c) 2026 G. Aue, N. Diedrich. Licensed under the MIT License.
+#
+
 
 REGISTER_MAP = {
     "user_outlet_temperature": {

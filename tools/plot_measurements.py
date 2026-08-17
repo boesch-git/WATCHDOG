@@ -1,7 +1,12 @@
 # tools/plot_measurements.py
+#
+# Copyright (c) 2026 G. Aue, N. Diedrich. Licensed under the MIT License.
+#
+
 
 import argparse
 import sqlite3
+import matplotlib
 from datetime import datetime
 from pathlib import Path 
 

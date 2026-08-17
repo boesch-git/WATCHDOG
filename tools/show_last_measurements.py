@@ -1,4 +1,8 @@
 # tools/show_last_measurements.py
+#
+# Copyright (c) 2026 G. Aue, N. Diedrich. Licensed under the MIT License.
+#
+
 
 import sqlite3
 from pathlib import Path
